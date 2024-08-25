@@ -1,0 +1,22 @@
+
+    <!-- Tableau HTML avec Angular *ngFor -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Téléphone</th>
+            <th>Adresse</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chib of chibani">
+            <td>{{ chib.nom }}</td>
+            <td>{{ chib.prenom }}</td>
+            <td>{{ chib.tel }}</td>
+            <td>{{ chib.adr }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

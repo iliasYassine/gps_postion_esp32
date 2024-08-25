@@ -1,0 +1,26 @@
+/* Style de base pour les éléments de la barre de navigation */
+.navbar {
+  background-color: #333; /* Couleur de fond de la barre de navigation */
+  overflow: hidden; /* Assure que le contenu ne dépasse pas de la barre */
+}
+
+.nav-links {
+  list-style-type: none; /* Supprime les puces pour la liste */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utilise flexbox pour aligner les éléments de la liste horizontalement */
+  justify-content: center; /* Centre les liens */
+}
+
+.nav-links li {
+  float: left; /* Alignement des éléments de la liste sur la même ligne */
+}
+
+.nav-links li a {
+  display: block; /* Transforme les liens en blocs pour permettre les marges et padding */
+  color: white; /* Couleur du texte des liens */
+  text-align: center; /* Centre le texte des liens */
+  padding: 14px 16px; /* Espacement autour du texte */
+  text-decoration: none; 
+
+}

@@ -1,0 +1,18 @@
+<!-- Ajout d'un conteneur pour le formulaire de recherche -->
+<div class="search-container" style="padding: 10px;">
+    <!-- Champs de saisie pour l'ID de l'utilisateur avec liaison de données et gestionnaire d'événements -->
+    <input
+      type="number"
+      placeholder="Entrez l'ID de l'utilisateur..."
+      [(ngModel)]="searchId"
+      (keydown.enter)="findAndZoomToUser(searchId)" />
+  
+    <!-- Bouton pour déclencher la recherche -->
+    <button (click)="findAndZoomToUser(searchId)">Rechercher</button>
+  </div>
+  
+<div id="map" style="height: 1000px;"></div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+

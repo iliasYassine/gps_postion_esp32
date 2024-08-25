@@ -1,0 +1,60 @@
+#map {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .search-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f5; /* Couleur de fond douce */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: background-color 0.3s ease;
+}
+
+.search-container:hover {
+    background-color: #e6e6ff; /* Couleur de fond au survol */
+}
+
+.search-container input {
+    width: 250px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 2px solid #5c5cff; /* Couleur de bordure */
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    color: #333; /* Couleur du texte */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #0000ff; /* Couleur de bordure en focus */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Ombre bleue en focus */
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #5c5cff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-container button:hover {
+    background-color: #0000ff; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+.search-container button:active {
+    transform: scale(0.95); /* Légère réduction de taille lors du clic */
+}
+
+
+  
