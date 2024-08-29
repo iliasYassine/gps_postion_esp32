@@ -95,11 +95,11 @@ private addMarkersToMap(): void {
         if (user) {
           
           let popupContent = `
-          <b>Nom:</b> ${user.nom}<br>
-          <b>Prénom:</b> ${user.prenom}<br>
-          <b>Téléphone:</b> ${user.tel}<br>
-          <b>Adresse:</b> habite hotel malik`;
-          marker.bindPopup(popupContent);
+  <b>Nom:</b> ${user.nom}<br>
+  <b>Prénom:</b> ${user.prenom}<br>
+  <b>Téléphone:</b> ${user.tel}<br>
+  <b>Adresse:</b> ${user.adr}<br>`;
+marker.bindPopup(popupContent);
           
         }
 

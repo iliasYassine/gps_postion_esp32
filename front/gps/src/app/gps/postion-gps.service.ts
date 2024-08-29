@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PostionGpsService {
-  private API_URL='http://127.0.0.1:8000/gps/gps/';
+  private API_URL='http://192.168.1.200:8000/gps/gps/';
   constructor(private httpClient:HttpClient) { }
 
   getGpsInfo():Observable<GPS[]>{

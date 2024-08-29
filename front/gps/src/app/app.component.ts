@@ -4,11 +4,12 @@ import { PostionGpsService } from './gps/postion-gps.service';
 import { GpsComponent } from './gps/gps/gps.component';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { routes } from './app.routes';
+import { AuthentificationComponent } from './auth/authentification/authentification.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, GpsComponent, NavbarComponent],
+  imports: [RouterOutlet, GpsComponent, NavbarComponent,AuthentificationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

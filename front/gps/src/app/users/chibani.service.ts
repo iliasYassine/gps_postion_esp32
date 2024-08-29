@@ -8,7 +8,7 @@ import { USERS } from './chibani.model';
 })
 export class ChibaniService {
 
-  private API_URL='http://127.0.0.1:8000/gps/users/';
+  private API_URL='http://192.168.1.200:8000/gps/users/';
   constructor(private httpClient:HttpClient) { }
 
   getUsersInfo():Observable<USERS[]>{
